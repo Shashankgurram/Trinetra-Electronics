@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TrinetraElectronics — Your One‑Stop Electronics Store</title>
+	<meta name="description" content="Shop mobiles, laptops, accessories, and wearables. Free shipping, warranty support, easy returns, and 24/7 customer service.">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<a class="brand" href="#home">
+				<span class="brand-accent">Trinetra</span>Electronics
+				<span class="brand-subtitle">All electronic items are available</span>
+			</a>
+			<nav class="nav" aria-label="Primary">
+				<button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle Menu">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</button>
+				<ul id="nav-menu" class="nav-menu">
+					<li><a href="#home">Home</a></li>
+					<li class="has-dropdown">
+						<button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Shop</button>
+						<ul class="dropdown" role="menu">
+							<li role="menuitem"><a href="#shop" data-filter="Mobiles">Mobiles</a></li>
+							<li role="menuitem"><a href="#shop" data-filter="Laptops">Tvs</a></li>
+							<li role="menuitem"><a href="#shop" data-filter="Accessories">AC</a></li>
+							<li role="menuitem"><a href="#shop" data-filter="Wearables">Coolers</a></li>
+						</ul>
+					</li>
+					<li><a href="#deals">Deals</a></li>
+					<li><a href="#about">About Us</a></li>
+					<li><a href="#reviews">Reviews</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section id="home" class="hero">
+			<div class="carousel" data-autoplay="true" data-interval="5000">
+				<div class="carousel-track">
+					<article class="slide is-active" style="--bg:url('https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1600&auto=format&fit=crop');">
+						<div class="slide-content container">
+							<h1>Unbeatable Deals on Latest Mobiles</h1>
+							<p>Upgrade your tech with flagship performance at smart prices.</p>
+							<div class="cta">
+								<a class="btn btn-primary" href="#shop">Shop Now</a>
+								<a class="btn btn-ghost" href="#categories">Explore Categories</a>
+							</div>
+						</div>
+					</article>
+					<article class="slide" style="--bg:url('images/tvs.jpg');">
+						<div class="slide-content container">
+							<h1>Latest Televisions</h1>
+							<p>Experience Entertainment Like Never Before.</p>
+							<div class="cta">
+								<a class="btn btn-primary" href="#shop" data-filter="Laptops">Shop Now</a>
+								<a class="btn btn-ghost" href="#deals">View Deals</a>
+							</div>
+						</div>
+					</article>
+					<article class="slide" style="--bg:url('images/ac.jpg');">
+						<div class="slide-content container">
+							<h1>Ac & Coolers</h1>
+							<p>Stay Cool, Stay Comfortable.</p>
+							<div class="cta">
+								<a class="btn btn-primary" href="#shop" data-filter="Accessories">Shop Now</a>
+								<a class="btn btn-ghost" href="#shop" data-filter="Wearables">Explore</a>
+							</div>
+						</div>
+					</article>
+					<article class="slide" style="--bg:url('images/fridge.jpg');">
+						<div class="slide-content container">
+							<h1>Refrigerators</h1>
+							<p>Smart Cooling, Smarter Living</p>
+							<div class="cta">
+								<a class="btn btn-primary" href="#shop" data-filter="Accessories">Shop Now</a>
+								<a class="btn btn-ghost" href="#shop" data-filter="Wearables">Explore</a>
+							</div>
+						</div>
+					</article>
+				</div>
+				<button class="carousel-btn prev" aria-label="Previous slide">&#10094;</button>
+				<button class="carousel-btn next" aria-label="Next slide">&#10095;</button>
+				<div class="carousel-dots" aria-label="Slide indicators"></div>
+			</div>
+		</section>
+
+		<section id="categories" class="categories container">
+			<h2 class="section-title">Shop by Category</h2>
+			<div class="category-grid">
+				<a class="category-card" href="#shop" data-filter="Mobiles">Mobiles</a>
+				<a class="category-card" href="#shop" data-filter="Laptops">Televisions</a>
+				<a class="category-card" href="#shop" data-filter="Accessories">AC & Coolers</a>
+				<a class="category-card" href="#shop" data-filter="Wearables">Refrigerators</a>
+			</div>
+		</section>
+
+		<section id="shop" class="shop container">
+			<div class="shop-header">
+				<h2 class="section-title">Featured Products</h2>
+				<div class="filters">
+					<button class="chip is-active" data-filter="All">All</button>
+					<button class="chip" data-filter="Mobiles">Mobiles</button>
+					<button class="chip" data-filter="Laptops">Televisions</button>
+					<button class="chip" data-filter="Accessories">AC & Coolers</button>
+					<button class="chip" data-filter="Wearables">Refrigerators</button>
+				</div>
+			</div>
+			<div class="product-grid" id="productGrid">
+				<!-- Products injected by JS -->
+			</div>
+		</section>
+
+		<section id="deals" class="value-props">
+			<div class="container">
+				<h2 class="section-title">Why Shop With Us</h2>
+				<div class="props-grid">
+					<div class="prop">
+						<div class="icon" aria-hidden="true">
+							<svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 3h18v4H3V3zm2 6h14l-1.5 10.5a2 2 0 0 1-2 1.5H8.5a2 2 0 0 1-2-1.5L5 9z" stroke="currentColor" stroke-width="1.5"/></svg>
+						</div>
+						<h3>Free Shipping</h3>
+						<p>On all orders over R.40000. Fast and tracked delivery.</p>
+					</div>
+					<div class="prop">
+						<div class="icon" aria-hidden="true">
+							<svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3l8 4v5c0 5-3.5 9-8 9s-8-4-8-9V7l8-4z" stroke="currentColor" stroke-width="1.5"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5"/></svg>
+						</div>
+						<h3>Warranty Support</h3>
+						<p>Authorized warranties and extended protection available.</p>
+					</div>
+					<div class="prop">
+						<div class="icon" aria-hidden="true">
+							<svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 7h10v10H7z" stroke="currentColor" stroke-width="1.5"/><path d="M7 12h10" stroke="currentColor" stroke-width="1.5"/></svg>
+						</div>
+						<h3>Easy Returns</h3>
+						<p>30‑day hassle‑free returns and instant refunds.</p>
+					</div>
+					<div class="prop">
+						<div class="icon" aria-hidden="true">
+							<svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10z" stroke="currentColor" stroke-width="1.5"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="1.5"/></svg>
+						</div>
+						<h3>24/7 Customer Service</h3>
+						<p>Real humans ready to help anytime via chat, email, and phone.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="about" class="about container">
+			<div class="about-inner">
+				<h2 class="section-title">About TrinetraElectronics</h2>
+				<p>We are a passionate team of technophiles bringing cutting‑edge electronics to your doorstep. From the newest Televisions to powerhouse Refrigerators and essential Electronic Products, our mission is to make premium tech accessible with stellar service.</p>
+			</div>
+		</section>
+
+		<section id="reviews" class="reviews">
+			<div class="container">
+				<h2 class="section-title">What Customers Say</h2>
+				<div class="reviews-grid">
+					<figure class="review">
+						<blockquote>“Blazing fast delivery and the Television was exactly as described.”</blockquote>
+						<figcaption>
+							<div class="stars" aria-label="Rated 5 out of 5">★★★★★</div>
+							<span>— G.Shashank</span>
+						</figcaption>
+					</figure>
+					<figure class="review">
+						<blockquote>“Great prices on Refrigerators, and the return process was super easy.”</blockquote>
+						<figcaption>
+							<div class="stars" aria-label="Rated 4 out of 5">★★★★☆</div>
+							<span>— P.Balakrishna </span>
+						</figcaption>
+					</figure>
+					<figure class="review">
+						<blockquote>“Support helped me set up my Mobile in minutes. 10/10.”</blockquote>
+						<figcaption>
+							<div class="stars" aria-label="Rated 5 out of 5">★★★★★</div>
+							<span>— T.Sharath </span>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact" class="contact">
+			<div class="container contact-inner">
+				<div class="contact-info">
+					<h2 class="section-title">Contact Us</h2>
+					<ul class="contact-list">
+						<li><strong>Name:</strong>Bomma Srikanth Goud</li>
+						<li><strong>Email:</strong> trinetraelectronics@gmail.com</li>
+						<li><strong>Phone:</strong> +91 95503 04156 </li>
+						<li><strong>Whatsapp Chat:</strong> +91 95503 04156 </li>
+						<li><strong>Location:</strong> Opposite Andhra Bank,Parkala,Warangal </li>
+					</ul>
+				</div>
+				
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container footer-top">
+			<div>
+				<a class="brand" href="#home"><span class="brand-accent">Trinetra</span>Electronics</a>
+				<p class="muted">Modern tech, trusted service.</p>
+			</div>
+			<nav aria-label="Footer">
+				<ul class="footer-links">
+					<li><a href="#" onclick="alert('Privacy Policy placeholder');return false;">Privacy Policy</a></li>
+					<li><a href="#" onclick="alert('Return Policy placeholder');return false;">Return Policy</a></li>
+					<li><a href="#contact">Support</a></li>
+				</ul>
+			</nav>
+			<div class="payments">
+				<span class="muted">We accept</span>
+				<div class="payment-icons" aria-label="Payment methods">
+					<span title="Visa" class="pm visa">All Credit cards</span>
+					<span title="Mastercard" class="pm mc">All Debit cards</span>
+					<span title="UPI" class="pm upi">UPI(Gpay,Phnpay,Paytm)</span>
+					
+				</div>
+			</div>
+		</div>
+		<div class="container footer-bottom">
+			<small>© <span id="year"></span> TrinetraElectronics. All rights reserved.</small>
+		</div>
+	</footer>
+
+	<div class="chat-modal" id="chatModal" aria-hidden="true" role="dialog" aria-label="Live Chat">
+		<div class="chat-dialog">
+			<header class="chat-header">
+				<strong>Live Chat</strong>
+				<button class="icon-btn" id="closeChat" aria-label="Close chat">✕</button>
+			</header>
+			<div class="chat-body" id="chatBody">
+				<div class="bot">Hi! How can we help you today?</div>
+			</div>
+			<form class="chat-input" id="chatForm">
+				<input type="text" id="chatField" placeholder="Type a message..." required>
+				<button class="btn btn-primary" type="submit">Send</button>
+			</form>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
