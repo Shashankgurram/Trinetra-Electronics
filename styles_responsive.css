@@ -37,7 +37,7 @@ img{max-width:100%;display:block}
 
 
 .header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
-.brand{font-weight:800;text-decoration:none;color:var(--text);font-size:45px}
+.brand{font-weight:800;text-decoration:none;color:var(--text);font-size:40px}
 .brand-accent{background:linear-gradient(90deg,var(--primary),var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent}
 
 .nav-toggle{display:none;background:none;border:0;color:var(--text);cursor:pointer}
