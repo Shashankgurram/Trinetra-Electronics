@@ -61,7 +61,7 @@ img{max-width:100%;display:block}
 .slide-content{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:center;gap:14px}
 .slide h1{font-size:clamp(28px,5.5vw,48px);margin:0}
 .slide .subtitle{font-size:clamp(16px,3vw,24px);margin:8px 0;color:var(--primary);font-weight:600;letter-spacing:0.5px}
-.slide p{color:var(--muted);margin:0 0 6px 0}
+.slide p{color:#fdf50abf;margin:0 0 6px 0}
 .cta{display:flex;gap:12px}
 
 .btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 16px;border-radius:10px;border:1px solid transparent;cursor:pointer;text-decoration:none;font-weight:600}
