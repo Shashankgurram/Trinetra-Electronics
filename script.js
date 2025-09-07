@@ -49,7 +49,7 @@
 					<div class="product-name">${p.name}</div>
 					<div class="product-meta">
 						<div class="price">Rs.${p.price}</div>
-						<button class="btn btn-primary add-btn" data-add="${p.id}">Add to Cart</button>
+						
 					</div>
 				</div>
 			</article>
@@ -141,3 +141,4 @@
 		}, 700);
 	});
 })();
+
